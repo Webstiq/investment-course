@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naucz się inwestować w 30 dni</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/bb6e8350de.js" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="money-favicon.png" type="image/x-icon">
+
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">InwestujMądrze</div>
+  <button class="nav-cta" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">Zapisz się →</button>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Kurs dostępny — ruszamy <span id="start-month"></span>
+    </div>
+    <h1>Naucz się inwestować<br>w <span>30 dni</span></h1>
+    <p class="hero-sub">
+      Zbuduj solidne fundamenty wiedzy inwestycyjnej. Od zera do pierwszego portfela — praktycznie, bez żargonu, krok po kroku.
+    </p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">
+        Zacznij teraz — bezpłatnie przez 7 dni
+      </button>
+      <span class="hero-guarantee">
+        <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Gwarancja zwrotu 30 dni
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat">
+    <span class="stat-num" data-count="4300">0</span>
+    <span class="stat-label">Absolwentów kursu</span>
+  </div>
+  <div class="stat">
+    <span class="stat-num" data-count="30">0</span>
+    <span class="stat-label">Dni do pierwszego portfela</span>
+  </div>
+  <div class="stat">
+    <span class="stat-num" data-suffix="%" data-count="96">0</span>
+    <span class="stat-label">Zadowolonych uczestników</span>
+  </div>
+  <div class="stat">
+    <span class="stat-num" data-count="12">0</span>
+    <span class="stat-label">Modułów video</span>
+  </div>
+</div>
+
+<!-- PROBLEMS -->
+<div class="problems-section">
+  <div class="problems-inner">
+    <p class="section-label">Czy to brzmi znajomo?</p>
+    <h2>Inwestowanie wydaje się<br>skomplikowane. Ale tak nie jest.</h2>
+    <div class="problems-grid reveal">
+      <div class="problem-card">
+        <span class="problem-icon"><i class="fa-solid fa-map-signs"></i></span>
+        <div class="problem-title">Nie wiesz od czego zacząć</div>
+        <p class="problem-text">Giełda, ETF-y, kryptowaluty, obligacje... Informacji jest za dużo i nie wiesz co jest dla Ciebie odpowiednie.</p>
+      </div>
+      <div class="problem-card">
+        <span class="problem-icon"><i class="fa-solid fa-lock"></i></span>
+        <div class="problem-title">Boisz się straty pieniędzy</div>
+        <p class="problem-text">Słyszałeś o ludziach, którzy stracili oszczędności. Ryzyko paraliżuje Cię przed podjęciem pierwszego kroku.</p>
+      </div>
+      <div class="problem-card">
+        <span class="problem-icon"><i class="fa-solid fa-book-open-reader"></i></span>
+        <div class="problem-title">Żargon finansowy Cię gubi</div>
+        <p class="problem-text">P/E ratio, dywersyfikacja, rebalancing... Artykuły finansowe wyglądają jak pisane w obcym języku.</p>
+      </div>
+      <div class="problem-card">
+        <span class="problem-icon"><i class="fa-regular fa-clock"></i></span>
+        <div class="problem-title">Masz mało czasu</div>
+        <p class="problem-text">Praca, rodzina, obowiązki. Czytanie grubych książek o finansach po prostu nie wchodzi w grę.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CURRICULUM -->
+<section id="curriculum">
+  <p class="section-label">Program kursu</p>
+  <h2>Co opanujesz<br>przez 30 dni?</h2>
+  <p class="section-desc">Każdy tydzień to konkretny blok wiedzy zakończony praktycznym zadaniem. Żadnego lania wody.</p>
+
+  <div class="curriculum reveal">
+    <div class="week-list">
+      <div class="week active">
+        <span class="week-num">TYDZIEŃ 1</span>
+        <div>
+          <div class="week-title">Fundamenty i psychologia inwestora</div>
+          <div class="week-topics">Jak działa rynek · Błędy behawioralne · Cele finansowe · Profil ryzyka</div>
+        </div>
+      </div>
+      <div class="week">
+        <span class="week-num">TYDZIEŃ 2</span>
+        <div>
+          <div class="week-title">Akcje, ETF-y i obligacje</div>
+          <div class="week-topics">Instrumenty finansowe · Jak czytać wykresy · Selekcja spółek · Pasywne ETF-y</div>
+        </div>
+      </div>
+      <div class="week">
+        <span class="week-num">TYDZIEŃ 3</span>
+        <div>
+          <div class="week-title">Budowa portfela inwestycyjnego</div>
+          <div class="week-topics">Dywersyfikacja · Alokacja aktywów · Rebalancing · IKE i IKZE w praktyce</div>
+        </div>
+      </div>
+      <div class="week">
+        <span class="week-num">TYDZIEŃ 4</span>
+        <div>
+          <div class="week-title">Strategia i pierwszy zakup</div>
+          <div class="week-topics">Wybór brokera · Pierwsze zlecenie · Plan inwestycyjny na 12 miesięcy</div>
+        </div>
+      </div>
+      <div class="week">
+        <span class="week-num">BONUS</span>
+        <div>
+          <div class="week-title">Podatki i kryptowaluty</div>
+          <div class="week-topics">PIT-38 · Rozliczenia · Krypto jako uzupełnienie portfela</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="curriculum-visual">
+      <div class="cv-title">Twoje kompetencje po kursie</div>
+      <div class="cv-chart">
+        <div class="chart-row">
+          <span class="chart-label">Analiza</span>
+          <div class="chart-bar-wrap"><div class="chart-bar" data-width="88%"></div></div>
+          <span class="chart-val">88%</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-label">Strategia</span>
+          <div class="chart-bar-wrap"><div class="chart-bar" data-width="92%"></div></div>
+          <span class="chart-val">92%</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-label">Portfel</span>
+          <div class="chart-bar-wrap"><div class="chart-bar" data-width="95%"></div></div>
+          <span class="chart-val">95%</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-label">Psychologia</span>
+          <div class="chart-bar-wrap"><div class="chart-bar" data-width="80%"></div></div>
+          <span class="chart-val">80%</span>
+        </div>
+        <div class="chart-row">
+          <span class="chart-label">Podatki</span>
+          <div class="chart-bar-wrap"><div class="chart-bar" data-width="75%"></div></div>
+          <span class="chart-val">75%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<div class="testimonials-section">
+  <div class="testimonials-inner">
+    <p class="section-label">Opinie uczestników</p>
+    <h2>Co mówią nasi absolwenci?</h2>
+    <div class="testi-grid reveal">
+      <div class="testi-card">
+        <span class="testi-result">+18% portfel</span>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">„Po kursie w końcu rozumiem co robię z pieniędzmi. Zbudowałam swój pierwszy portfel ETF i po roku mam realny zysk. Polecam każdemu, kto zaczyna od zera."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AK</div>
+          <div>
+            <div class="testi-name">Anna Kowalska</div>
+            <div class="testi-role">Nauczycielka, 34 lata</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <span class="testi-result">IKE max 2023</span>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">„Próbowałem trzech innych kursów i żaden nie tłumaczył tak jasno. Tutaj dostałem konkretny plan działania, nie teorię. W tydzień otworzyłem IKE."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MN</div>
+          <div>
+            <div class="testi-name">Michał Nowak</div>
+            <div class="testi-role">Programista, 28 lat</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <span class="testi-result">Portfel: 3 ETF</span>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">„Jako osoba, która nigdy nie interesowała się finansami, bałam się że to nie dla mnie. Kurs zmienił moje myślenie. Teraz co miesiąc inwestuję automatycznie."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">EW</div>
+          <div>
+            <div class="testi-name">Ewa Wiśniewska</div>
+            <div class="testi-role">Graficzka, 31 lat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRICING -->
+<section id="pricing">
+  <p class="section-label" style="justify-content:center;text-align:center">Cennik</p>
+  <h2 style="text-align:center">Wybierz swój plan</h2>
+  <p class="section-desc" style="margin:0 auto 60px;text-align:center">Zacznij inwestować teraz. Bez ukrytych opłat.</p>
+
+  <div class="pricing-grid reveal">
+    <div class="price-card">
+      <div class="price-tier">Start</div>
+      <div class="price-amount">197<span style="font-size:1.5rem">zł</span></div>
+      <div class="price-period">jednorazowo · dostęp na 6 miesięcy</div>
+      <ul class="price-features">
+        <li><span class="check">✓</span> 12 modułów video (8h)</li>
+        <li><span class="check">✓</span> Arkusze kalkulacyjne</li>
+        <li><span class="check">✓</span> Kalkulator portfela</li>
+        <li class="disabled"><span class="cross">✗</span> Sesje Q&A na żywo</li>
+        <li class="disabled"><span class="cross">✗</span> Prywatna społeczność</li>
+      </ul>
+      <button class="btn-price outline">Wybieram Start</button>
+    </div>
+
+    <div class="price-card featured">
+      <div class="price-tier">Pro — Najpopularniejszy</div>
+      <div class="price-amount">397<span style="font-size:1.5rem">zł</span></div>
+      <div class="price-period">jednorazowo · dostęp bezterminowy</div>
+      <ul class="price-features">
+        <li><span class="check">✓</span> 12 modułów video (8h)</li>
+        <li><span class="check">✓</span> Arkusze kalkulacyjne</li>
+        <li><span class="check">✓</span> Kalkulator portfela</li>
+        <li><span class="check">✓</span> Sesje Q&A na żywo (4x)</li>
+        <li><span class="check">✓</span> Prywatna społeczność</li>
+      </ul>
+      <button class="btn-price solid">Wybieram Pro</button>
+    </div>
+
+    <div class="price-card">
+      <div class="price-tier">VIP</div>
+      <div class="price-amount">797<span style="font-size:1.5rem">zł</span></div>
+      <div class="price-period">jednorazowo · dostęp bezterminowy</div>
+      <ul class="price-features">
+        <li><span class="check">✓</span> Wszystko z planu Pro</li>
+        <li><span class="check">✓</span> 2x konsultacja 1:1 (60 min)</li>
+        <li><span class="check">✓</span> Analiza Twojego portfela</li>
+        <li><span class="check">✓</span> Dostęp do nowych modułów</li>
+        <li><span class="check">✓</span> Certyfikat ukończenia</li>
+      </ul>
+      <button class="btn-price outline">Wybieram VIP</button>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <p class="section-label" style="justify-content:center;text-align:center">FAQ</p>
+  <h2 style="text-align:center">Masz pytania?</h2>
+  <div class="faq-list reveal">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Czy potrzebuję wcześniejszej wiedzy finansowej?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">Absolutnie nie. Kurs jest zaprojektowany od zera dla kompletnych początkujących. Zaczynamy od absolutnych podstaw — co to jest akcja, jak działają rynki — i stopniowo przechodzimy do bardziej zaawansowanych tematów.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Ile czasu dziennie potrzebuję poświęcić?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">Każdy moduł trwa 30–45 minut. Przy 30 minutach dziennie spokojnie ukończysz kurs w zaplanowane 30 dni. Możesz też wrócić do materiałów w dowolnym momencie.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Ile pieniędzy potrzebuję, żeby zacząć inwestować?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">Można zacząć już od 100 zł miesięcznie. W kursie pokażemy jak budować portfel przy różnych budżetach i jak wybrać brokera, który nie pobiera wysokich prowizji.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Co jeśli kurs mi nie odpowiada?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">Oferujemy 30-dniową gwarancję zwrotu pieniędzy bez zadawania pytań. Jeśli w ciągu pierwszego miesiąca uznasz, że kurs nie spełnia Twoich oczekiwań, zwrócimy Ci pełną kwotę.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Czy kurs obejmuje kryptowaluty?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">Tak, mamy bonusowy moduł o kryptowalutach jako element zdywersyfikowanego portfela. Nie jest to jednak kurs o krypto — skupiamy się na klasycznych instrumentach: akcjach, ETF-ach i obligacjach.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <p class="section-label" style="justify-content:center">Czas działać</p>
+  <h2>Zacznij budować<br>swoją <span style="color:var(--gold)">finansową przyszłość</span></h2>
+  <p>Każdy dzień zwłoki to utracone odsetki składane. Nie czekaj na idealny moment.</p>
+  <button class="btn-primary" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">
+    Dołącz do kursu — 7 dni za darmo
+  </button>
+  <div class="cta-meta">
+    <span>✓ Gwarancja 30 dni</span>
+    <span>✓ Dostęp od razu</span>
+    <span>✓ Bez subskrypcji</span>
+    <span>✓ Faktura VAT</span>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">InwestujMądrze</div>
+  <div class="footer-text">© <span id="year"></span> InwestujMądrze · Polityka prywatności · Regulamin</div>
+  <div class="footer-text">Strona stworzona przez: <strong style="color:var(--gold)">TwojaFirma.pl</strong></div>
+</footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>
